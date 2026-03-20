@@ -1,7 +1,16 @@
-dash==2.24.1
-flask==2.3.3
-pandas==2.1.1
-numpy==1.26.5
-Pillow==10.0.1
-opencv-python-headless==4.8.1.78
-gunicorn==21.2.0
+# Dash framework compatible with Python 3.13
+dash>=3.0.0,<4.0.0
+
+# WSGI server
+gunicorn>=20.1.0
+
+# Data processing
+pandas>=2.1.0
+numpy>=1.26.0
+
+# Image handling
+Pillow>=10.0.0
+opencv-python>=4.9.0.74
+
+# Optional cache utilities
+cachetools>=5.4.0
