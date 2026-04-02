@@ -184,7 +184,7 @@ def serve_mannequin():
 @server.route('/stock/<path:filename>')
 def serve_stock_image(filename):
     """Serve stock images for the homepage."""
-    stock_dir = os.path.join(os.path.dirname(__file__), 'stock images')
+    stock_dir = os.path.join(os.path.dirname(__file__), 'stock_images')
     path = os.path.join(stock_dir, filename)
     if not os.path.exists(path):
         return Response(status=404)
@@ -852,7 +852,7 @@ function findProduct(id) {
 }
 
 const categories = [
-  { id: 0, name: 'T-shirt/Top', icon: '', image: '/stock/t%20shirt.jpeg' },
+  { id: 0, name: 'T-shirt/Top', icon: '', image: '/stock/tshirt.jpeg' },
   { id: 1, name: 'Trouser',     icon: '', image: '/stock/trouser.jpeg' },
   { id: 2, name: 'Pullover',    icon: '', image: '/stock/pullover.jpeg' },
   { id: 3, name: 'Dress',       icon: '', image: '/stock/dress.jpeg' },
@@ -861,7 +861,7 @@ const categories = [
   { id: 6, name: 'Shirt',       icon: '', image: '/stock/shirt.jpeg' },
   { id: 7, name: 'Sneaker',     icon: '', image: '/stock/sneakers.jpeg' },
   { id: 8, name: 'Bag',         icon: '', image: '/stock/bag.jpeg' },
-  { id: 9, name: 'Ankle Boot',  icon: '', image: '/stock/ankle%20boots.jpeg' }
+  { id: 9, name: 'Ankle Boot',  icon: '', image: '/stock/ankle_boots.jpeg' }
 ];
 
 // ===== STATE =====
